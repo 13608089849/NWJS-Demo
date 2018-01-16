@@ -1,0 +1,13 @@
+{
+	"name":"YoudaoDict",
+	"main":"YoudaoDict.html",
+	"window":{
+			"title":"YoudaoDict",
+			"toolbar":false,
+			"frame":true,
+			"position":"center",
+			"always-on-top":true,
+			"width":1000,
+			"height":800
+		}
+}

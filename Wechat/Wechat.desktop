@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Wechat
+Exec=sh /usr/local/lib/Wechat/Wechat.sh
+Icon=/usr/local/lib/Wechat/Wechat.jpg
+Categories=GTK;Network;message;
+Comment=Wechat
+Terminal=false
+Type=Application

@@ -1,0 +1,22 @@
+{
+	"name":"Wechat",
+	"main":"Wechat.html",
+	"window":{
+			"title":"Wechat",
+			"toolbar":false,
+			"frame":true,
+			"position":"center",
+			"always-on-top":true,
+			"width":1000,
+			"height":800
+		}
+}
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Wechat</title>
+ </head>
+ <body>
+  <iframe src="https://wx.qq.com/"/>
+ </body>
+</html>
