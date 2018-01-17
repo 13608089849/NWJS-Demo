@@ -7,9 +7,8 @@
 ----
 **关于nwjs**
 
-官网：[https://nwjs.io/](https://nwjs.io/)
-
-github：[https://github.com/nwjs/nw.js](https://github.com/nwjs/nw.js)
+- 官网：[https://nwjs.io/](https://nwjs.io/)
+- github：[https://github.com/nwjs/nw.js](https://github.com/nwjs/nw.js)
 ----
 ## 1. Demo - Wechat
 ![](https://github.com/13608089849/NWJS-Demo/blob/master/image/wechat.png)
@@ -37,7 +36,7 @@ github：[https://github.com/nwjs/nw.js](https://github.com/nwjs/nw.js)
 	
 ----
 ## 4. NWJS使用教程
-^(1) 创建一个html文件，里面嵌入你想定制的web应用链接^
+(1) 创建一个html文件，里面嵌入你想定制的web应用链接
 ````
 <html>
  	<head>
@@ -51,7 +50,7 @@ github：[https://github.com/nwjs/nw.js](https://github.com/nwjs/nw.js)
 	
 ````
 ** **
-^(2) 创建一个名为package的json文件，这是固定名称^
+(2) 创建一个名为package的json文件，这是固定名称
 ````
 {
 	"name":"Wechat",
@@ -68,20 +67,20 @@ github：[https://github.com/nwjs/nw.js](https://github.com/nwjs/nw.js)
 }
 ````
 ** **
-^(3) 将二者打包成nw文件^
+(3) 将二者打包成nw文件
 > sudo cat package.json Wechat.html > Wechat.nw
 
-^(4) 将所需文件放在nw程序同级目录中^
+(4) 将所需文件放在nw程序同级目录中
 
 ** **
-^(5) 创建一个sh启动脚本，路径请改为自己的nw程序路径和应用路径^
+(5) 创建一个sh启动脚本，路径请改为自己的nw程序路径和应用路径
 ````
 #!/bin/bash
 cd /usr/local/lib/nwjs-sdk-v0.27.5-linux-x64
 ./nw /usr/local/lib/Wechat/Wechat.nw
 ````
 ** **
-^(6) 创建一个desktop快捷方式，路径请改为自己的启动脚本路径和图标路径^
+(6) 创建一个desktop快捷方式，路径请改为自己的启动脚本路径和图标路径
 ````
 [Desktop Entry]
 Encoding=UTF-8
@@ -94,7 +93,7 @@ Terminal=false
 Type=Application
 ````
 ** **
-^(7) 开始使用你定制的应用，双击快捷方式，启动后右键单击图标锁定到启动器^
+(7) 开始使用你定制的应用，双击快捷方式，启动后右键单击图标锁定到启动器
 
 ----
 ## 5. NWJS安装及运行过程中可能出现的问题及解决方案
@@ -105,7 +104,8 @@ Type=Application
 
 ** **
 2. nw安装失败
-从官网下载sdk：[https://nwjs.io/](https://nwjs.io/)，解压即可
+
+从官网下载sdk：[https://nwjs.io/](https://nwjs.io/)
 
  ** **
 3. 无法加载以下来源的扩展程序：xxxxxx\xxx.nw.清单文件缺失或不可读
@@ -117,9 +117,8 @@ Type=Application
 ## 6. 推荐一些基于electron封装的应用以供使用和学习借鉴
 **关于electron**
 
-官网：[https://electronjs.org/](https://electronjs.org/)
-
-github：[https://github.com/electron/electron](https://github.com/electron/electron)
+- 官网：[https://electronjs.org/](https://electronjs.org/)
+- github：[https://github.com/electron/electron](https://github.com/electron/electron)
 ** **
 1. [钉钉：DingTalk](https://github.com/nashaofu/dingtalk)
 2. [微信：Wechat](https://github.com/geeeeeeeeek/electronic-wechat)
