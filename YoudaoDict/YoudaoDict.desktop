@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=YoudaoDict
+Exec=sh /home/zengyu/git/NWJS-Demo/YoudaoDict/YoudaoDict.sh
+Icon=/home/zengyu/git/NWJS-Demo/YoudaoDict/YoudaoDict.jpeg
+Categories=GTK;Network;message;
+Comment=YoudaoDict
+Terminal=false
+Type=Application

@@ -1,8 +1,8 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=Wechat
-Exec=sh /usr/local/lib/Wechat/Wechat.sh
-Icon=/usr/local/lib/Wechat/Wechat.jpg
+Exec=sh /home/zengyu/git/NWJS-Demo/Wechat/Wechat.sh
+Icon=/home/zengyu/git/NWJS-Demo/Wechat/Wechat.jpg
 Categories=GTK;Network;message;
 Comment=Wechat
 Terminal=false

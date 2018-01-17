@@ -69,15 +69,14 @@
 ** **
 (3) 将二者打包成nw文件
 > sudo cat package.json Wechat.html > Wechat.nw
-
+** **
 (4) 将所需文件放在nw程序同级目录中
-
 ** **
 (5) 创建一个sh启动脚本，路径请改为自己的nw程序路径和应用路径
 ````
 #!/bin/bash
 cd /usr/local/lib/nwjs-sdk-v0.27.5-linux-x64
-./nw /usr/local/lib/Wechat/Wechat.nw
+./nw /home/zengyu/git/NWJS-Demo/Wechat/Wechat.nw
 ````
 ** **
 (6) 创建一个desktop快捷方式，路径请改为自己的启动脚本路径和图标路径
@@ -85,8 +84,8 @@ cd /usr/local/lib/nwjs-sdk-v0.27.5-linux-x64
 [Desktop Entry]
 Encoding=UTF-8
 Name=Wechat
-Exec=sh /usr/local/lib/Wechat/Wechat.sh
-Icon=/usr/local/lib/Wechat/Wechat.jpg
+Exec=sh /home/zengyu/git/NWJS-Demo/Wechat/Wechat.sh
+Icon=/home/zengyu/git/NWJS-Demo/Wechat/Wechat.jpg
 Categories=GTK;Network;message;
 Comment=Wechat
 Terminal=false
