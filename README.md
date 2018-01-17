@@ -2,18 +2,20 @@
 
 **前言**
 
- 相对于偏向应用的windows系统，Linux系统更偏向于开发，因此对于依赖Windows应用的人来说，缺了很多常用软件会很不习惯，本文的目的便是通过两个Demo来引出后面的教程——通过NWJS来封装你想要的Web应用。以Ubuntu 16.04为例（14.04可能无法兼容部分依赖）。
+相对于偏向应用的windows系统，Linux系统更偏向于开发，因此对于依赖Windows应用的人来说，缺了很多常用软件会很不习惯，本文的目的便是通过两个Demo来引出后面的教程——通过NWJS来封装你想要的Web应用。以Ubuntu 16.04为例（14.04可能无法兼容部分依赖）。
 
 ----
 **关于nwjs**
+
 官网：[https://nwjs.io/](https://nwjs.io/)
+
 github：[https://github.com/nwjs/nw.js](https://github.com/nwjs/nw.js)
 ----
-## 1. Wechat
-![]()
+## 1. Demo - Wechat
+![](https://github.com/13608089849/NWJS-Demo/blob/master/image/wechat.png)
 ----
-## 2. YoudaoDict
-![]()
+## 2. Demo - YoudaoDict
+![](https://github.com/13608089849/NWJS-Demo/blob/master/image/youdaodict.png)
 ----
 ## 3. 准备工作
 **安装nodejs**
@@ -35,7 +37,7 @@ github：[https://github.com/nwjs/nw.js](https://github.com/nwjs/nw.js)
 	
 ----
 ## 4. NWJS使用教程
-*创建一个html文件，里面嵌入你想定制的web应用链接*
+^(1) 创建一个html文件，里面嵌入你想定制的web应用链接^
 ````
 <html>
  	<head>
@@ -49,7 +51,7 @@ github：[https://github.com/nwjs/nw.js](https://github.com/nwjs/nw.js)
 	
 ````
 ** **
-*创建一个名为package的json文件，这是固定名称*
+^(2) 创建一个名为package的json文件，这是固定名称^
 ````
 {
 	"name":"Wechat",
@@ -66,20 +68,20 @@ github：[https://github.com/nwjs/nw.js](https://github.com/nwjs/nw.js)
 }
 ````
 ** **
-*将二者打包成nw文件*
+^(3) 将二者打包成nw文件^
 > sudo cat package.json Wechat.html > Wechat.nw
 
-*将所需文件放在nw程序同级目录中*
+^(4) 将所需文件放在nw程序同级目录中^
 
 ** **
-*创建一个sh启动脚本，路径请改为自己的nw程序路径和应用路径*
+^(5) 创建一个sh启动脚本，路径请改为自己的nw程序路径和应用路径^
 ````
 #!/bin/bash
 cd /usr/local/lib/nwjs-sdk-v0.27.5-linux-x64
 ./nw /usr/local/lib/Wechat/Wechat.nw
 ````
 ** **
-*创建一个desktop快捷方式，路径请改为自己的启动脚本路径和图标路径*
+^(6) 创建一个desktop快捷方式，路径请改为自己的启动脚本路径和图标路径^
 ````
 [Desktop Entry]
 Encoding=UTF-8
@@ -92,7 +94,7 @@ Terminal=false
 Type=Application
 ````
 ** **
-*开始使用你定制的应用，双击快捷方式，启动后右键单击图标锁定到启动器*
+^(7) 开始使用你定制的应用，双击快捷方式，启动后右键单击图标锁定到启动器^
 
 ----
 ## 5. NWJS安装及运行过程中可能出现的问题及解决方案
@@ -107,13 +109,16 @@ Type=Application
 
  ** **
 3. 无法加载以下来源的扩展程序：xxxxxx\xxx.nw.清单文件缺失或不可读
-
+````
 可能原因1：检查所有相关文件编码，采用中文编码会导致该问题
 可能原因2：html文件、json文件、nw文件是否都位于nwjs目录下的nw程序同级目录中
+````
 ----
 ## 6. 推荐一些基于electron封装的应用以供使用和学习借鉴
 **关于electron**
+
 官网：[https://electronjs.org/](https://electronjs.org/)
+
 github：[https://github.com/electron/electron](https://github.com/electron/electron)
 ** **
 1. [钉钉：DingTalk](https://github.com/nashaofu/dingtalk)
