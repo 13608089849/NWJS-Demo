@@ -1,11 +1,11 @@
-# Ubuntu环境下使用NWJS对web应用封装
+# Ubuntu环境下使用NW.js对web应用封装
 
 **前言**
 
-相对于偏向应用的windows系统，Linux系统更偏向于开发，因此对于依赖Windows应用的人来说，缺了很多常用软件会很不习惯，本文的目的便是通过两个Demo来引出后面的教程——通过NWJS来封装你想要的Web应用。以Ubuntu 16.04为例（14.04可能无法兼容部分依赖）。
+相对于偏向应用的windows系统，Linux系统更偏向于开发，因此对于依赖Windows应用的人来说，缺了很多常用软件会很不习惯，本文的目的便是通过两个Demo来引出后面的教程——通过NW.js来封装你想要的Web应用。以Ubuntu 16.04为例（14.04可能无法兼容部分依赖）。
 
 ----
-**关于nwjs**
+**关于NW.js**
 
 - 官网：[https://nwjs.io/](https://nwjs.io/)
 - github：[https://github.com/nwjs/nw.js](https://github.com/nwjs/nw.js)
@@ -29,13 +29,13 @@
 	使用 'npm --version' 可以查看安装成功的版本
 
 ** **
-**安装nwjs**
+**安装NW.js**
 > sudo npm install nw -g
 
 	安装成功后会显示目录结构，使用 'nw --version' 可以查看安装成功的版本
 	
 ----
-## 4. NWJS使用教程
+## 4. NW.js使用教程
 (1) 创建一个html文件，里面嵌入你想定制的web应用链接
 ````
 <html>
@@ -95,7 +95,7 @@ Type=Application
 (7) 开始使用你定制的应用，双击快捷方式，启动后右键单击图标锁定到启动器
 
 ----
-## 5. NWJS安装及运行过程中可能出现的问题及解决方案
+## 5. NW.js安装及运行过程中可能出现的问题及解决方案
 1. 缺少部分依赖
 >  sudo apt-get install -f
 	
