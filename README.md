@@ -79,7 +79,7 @@ cd /usr/local/lib/nwjs-sdk-v0.27.5-linux-x64
 ./nw /home/zengyu/git/NWJS-Demo/Wechat/Wechat.nw
 ````
 ** **
-(6) 在/usr/share/applications/下创建一个desktop快捷方式，其中内容的路径请改为自己的启动脚本路径和图标路径
+(6) 在/usr/share/applications/下创建一个后缀名为desktop的快捷方式，其中内容的路径请改为自己的启动脚本路径和图标路径
 ```
 sudo gedit /usr/share/applications/Wechat.desktop
 ```
