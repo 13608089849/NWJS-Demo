@@ -37,7 +37,7 @@
 ----
 ## 4. NW.js使用教程
 (1) 创建一个html文件，里面嵌入你想定制的web应用链接
-````
+````html
 <html>
  	<head>
   		<meta charset="utf-8">
@@ -51,7 +51,7 @@
 ````
 ** **
 (2) 创建一个名为package的json文件，这是固定名称
-````
+````json
 {
 	"name":"Wechat",
 	"main":"Wechat.html",
@@ -73,14 +73,14 @@
 (4) 将所需文件放在nw程序同级目录中
 ** **
 (5) 创建一个sh启动脚本，路径请改为自己的nw程序路径和应用路径
-````
+````shell
 #!/bin/bash
 cd /usr/local/lib/nwjs-sdk-v0.27.5-linux-x64
 ./nw /home/zengyu/git/NWJS-Demo/Wechat/Wechat.nw
 ````
 ** **
 (6) 在/usr/share/applications/下创建一个后缀名为desktop的快捷方式，其中内容的路径请改为自己的启动脚本路径和图标路径
-```
+```shell
 sudo gedit /usr/share/applications/Wechat.desktop
 ```
 
