@@ -11,10 +11,10 @@
 - github：[https://github.com/nwjs/nw.js](https://github.com/nwjs/nw.js)
 ----
 ## 1. Demo - Wechat
-![](https://github.com/frogfans/NWJS-Demo/blob/master/image/wechat.png)
+![](image/wechat.png?raw=true)
 ----
 ## 2. Demo - YoudaoDict
-![](https://github.com/frogfans/NWJS-Demo/blob/master/image/youdaodict.png)
+![](image/youdaodict.png?raw=true)
 ----
 ## 3. 准备工作
 **安装nodejs**
